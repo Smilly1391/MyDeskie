@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("todo");
     const input = document.getElementById("input");
+
+   
     const taskList = document.createElement("div");
     taskList.id = "task-list";
-    document.querySelector("#task").appendChild(taskList);
+    document.querySelector(".main").appendChild(taskList);
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
