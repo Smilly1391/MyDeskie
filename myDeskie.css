@@ -5,10 +5,6 @@
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #F9FAFB;
   line-height: 1.6;
@@ -20,11 +16,7 @@ body {
   padding: 30px 20px;
   color: white;
   position: relative;
-  min-height: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  min-height: 80px;
 }
 
 .header h1 {
@@ -33,11 +25,10 @@ body {
 
 .header-buttons {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   display: flex;
-  gap: 10px;
-  z-index: 2;
+  gap: 15px;
 }
 
 .header-btn {
@@ -55,7 +46,6 @@ body {
   gap: 30px;
   margin-top: 10px;
   flex-wrap: wrap;
-  padding: 0;
 }
 
 .nav-item {
@@ -94,7 +84,7 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 40px 20px;
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .main h2 {
@@ -137,10 +127,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #7C3AED;
-}
-
-#task-list {
-  margin-top: 20px;
 }
 
 .task-item {
@@ -229,6 +215,12 @@ footer h4 {
     font-size: 1.5rem;
   }
 
+  .header-buttons {
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+  }
+
   .task-item {
     flex-direction: column;
     align-items: flex-start;
@@ -241,10 +233,6 @@ footer h4 {
 }
 
 @media (max-width: 480px) {
-  body {
-    font-size: 0.95rem;
-  }
-
   .welcome h2 {
     font-size: 1.5rem;
   }
