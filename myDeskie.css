@@ -13,10 +13,9 @@ body {
 
 .header {
   background-color: #A78BFA;
-  padding: 30px 20px;
+  padding: 15px 20px;
   color: white;
   position: relative;
-  min-height: 80px;
 }
 
 .header h1 {
@@ -39,13 +38,13 @@ body {
   cursor: pointer;
 }
 
+
 .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 10px;
-  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -62,10 +61,11 @@ body {
   border-radius: 6px;
 }
 
+
 .welcome {
   background-color: #F3E8FF;
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
   margin-top: 10px;
 }
 
@@ -80,12 +80,13 @@ body {
   margin-top: 10px;
 }
 
+
 .main {
   max-width: 900px;
   margin: 40px auto;
-  padding: 40px 20px;
-  min-height: 500px;
+  padding: 0 20px;
 }
+
 
 .main h2 {
   font-size: 1.5rem;
@@ -99,11 +100,11 @@ body {
   color: #444;
 }
 
+
 form#todo {
   display: flex;
   gap: 10px;
   margin-top: 20px;
-  flex-wrap: wrap;
 }
 
 #input {
@@ -112,7 +113,6 @@ form#todo {
   border: 1px solid #D1D5DB;
   border-radius: 6px;
   font-size: 1rem;
-  min-width: 200px;
 }
 
 button[type="submit"] {
@@ -129,9 +129,36 @@ button[type="submit"]:hover {
   background-color: #7C3AED;
 }
 
+
+footer {
+  background-color: #2C292A;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 12px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #A78BFA;
+}
+
 .task-item {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #F3E8FF;
@@ -145,7 +172,6 @@ button[type="submit"]:hover {
   flex: 1;
   color: #4B0082;
   font-size: 1rem;
-  margin-bottom: 8px;
 }
 
 .edit-btn, .delete-btn {
@@ -174,82 +200,4 @@ button[type="submit"]:hover {
 
 .delete-btn:hover {
   background-color: #e27171;
-}
-
-footer {
-  background-color: #2C292A;
-  color: white;
-  text-align: center;
-  padding: 30px 10px;
-  margin-top: 40px;
-}
-
-footer h4 {
-  margin-bottom: 10px;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons a {
-  margin: 0 12px;
-  color: white;
-  padding: 0 6px;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #A78BFA;
-}
-
-@media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .header h1 {
-    font-size: 1.5rem;
-  }
-
-  .header-buttons {
-    top: 10px;
-    right: 10px;
-    gap: 10px;
-  }
-
-  .task-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .edit-btn, .delete-btn {
-    margin-top: 5px;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .welcome h2 {
-    font-size: 1.5rem;
-  }
-
-  .welcome p {
-    font-size: 1rem;
-  }
-
-  .main {
-    padding: 20px 10px;
-  }
-
-  button[type="submit"] {
-    width: 100%;
-  }
-
-  form#todo {
-    flex-direction: column;
-  }
 }
